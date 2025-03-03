@@ -8,11 +8,11 @@
 
 
 
-## 脚本合集
+# 脚本合集
 
 本仓库以个人应用为导向，总结学习与开发过程中应用到的脚本
 
-### 概述（文件结构）
+## 概述（文件结构）
 
 - yolo：yolo相关的脚本
   - split_train_val.py：数据集划分
@@ -20,9 +20,9 @@
   - json_to_yolo.py：标注文件格式转换
 - split_files.py：文件均分
 
-### 脚本使用说明
+## 脚本使用说明
 
-#### split_train_val.py
+### split_train_val.py
 
 **作用：**划分数据集
 
@@ -30,7 +30,7 @@
 python split_train_val.py
 ```
 
-#### write_img_path.py
+### write_img_path.py
 
 **作用：**按要求把文件路径保存到指定文件
 
@@ -40,7 +40,7 @@ python split_train_val.py
 python write_img_path.py
 ```
 
-#### json_to_yolo.py
+### json_to_yolo.py
 
 **作用：**对标注文件进行格式转换
 
@@ -50,7 +50,7 @@ python write_img_path.py
 python json_to_yolo.py
 ```
 
-#### split_files.py
+### split_files.py
 
 **作用：**把一个文件夹内的同类型文件等分到n个子文件夹中（常用于分配任务）
 
