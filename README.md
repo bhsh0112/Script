@@ -1,4 +1,10 @@
-[TOC]
+- [脚本合集](#脚本合集)
+  - [概述（文件结构）](#概述文件结构)
+  - [脚本使用说明](#脚本使用说明)
+    - [split\_train\_val.py](#split_train_valpy)
+    - [write\_img\_path.py](#write_img_pathpy)
+    - [json\_to\_yolo.py](#json_to_yolopy)
+    - [split\_files.py](#split_filespy)
 
 
 
