@@ -69,9 +69,9 @@ python split_files.py --source_dir /path/to/folder --file_extension .[extension]
 python split_files.py --source_dir images file_extension .jpg --num_folders 5
 ```
 
-### youtube2mp4.py
+### URL2mp4.py
 
-**作用：**输入youtube链接，即可在当前目录下新建一个Downloads文件夹，保存链接中的视频
+**作用：**输入视频网站链接（当前支持bilibili和youtube），即可在当前目录下新建一个Downloads文件夹，保存链接中的视频
 
 环境配置：
 
@@ -79,7 +79,7 @@ python split_files.py --source_dir images file_extension .jpg --num_folders 5
 - 安装ffmpeg（不同系统或不同，可自查教程，通常单一指令即可）
 
 ```bash
-python youtube2mp4.mp4
+python URL2mp4.mp4
 ```
 
 运行后在终端输入URL即可
