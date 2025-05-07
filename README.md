@@ -14,11 +14,15 @@
 
 ## 概述（文件结构）
 
-- yolo：yolo相关的脚本
-  - split_train_val.py：数据集划分
-  - write_img_path.py：文件路径写入
-  - json_to_yolo.py：标注文件格式转换
-- split_files.py：文件均分
+这里只提供一个功能概述，具体使用方法见下文
+
+| 脚本               | 功能                                                         | 脚本链接                                                     |
+| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| split_train_val.py | 划分数据集                                                   | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/split_train_val.py) |
+| write_img_path.py  | 按要求把文件路径保存到指定文件（yolo用）                     | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/write_img_path.py) |
+| json_to_yolo.py    | 对标注文件进行json到yolo的格式转换（yolo用）                 | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/json_to_yolo.py) |
+| split_files.py     | 把一个文件夹内的同类型文件等分到n个子文件夹中（常用于分配任务） | [链接](https://github.com/bhsh0112/Script/blob/main/split-files.py) |
+| URL2mp4.py         | 下载链接中的视频（当前支持youtube和bilibili）                | [链接](https://github.com/bhsh0112/Script/blob/main/URL2mp4.py) |
 
 ## 脚本使用说明
 
