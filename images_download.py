@@ -10,6 +10,7 @@ def download_content(url):
 
 # 将字符串内容保存到文件中
 def save_to_file(filename, content):
+    print(filename)
     os.makedirs(os.path.dirname(filename), exist_ok=True)  # 确保文件夹存在
     with open(filename, "wb") as fo:  # 使用二进制写入方式保存字节内容
         fo.write(content)
@@ -17,7 +18,8 @@ def save_to_file(filename, content):
 url = input("请输入网址:")
 save_path = input("请输入保存路径:")
 result = download_content(url)
-save_to_file("tmp/tmp.html", result)
+tmp_html_path="./tmp_for_download_images.html"
+save_to_file(tmp_html_path, result)
 
 from bs4 import BeautifulSoup
 
@@ -28,7 +30,7 @@ def create_doc_from_filename(filename):
     doc = BeautifulSoup(html_content, "lxml")
     return doc
 
-doc = create_doc_from_filename("tmp/tmp.html")
+doc = create_doc_from_filename(tmp_html_path)
 images = doc.find_all("img")
 
 # 下载图片
@@ -51,7 +53,7 @@ def download_images(url, images,save_path):
             http = urllib3.PoolManager()
             response = http.request("GET", src)
             if response.status >= 200 and response.status < 300:
-                with open(os.path.join("tmp/images", file_name), "wb") as f:
+                with open(os.path.join(save_path, file_name), "wb") as f:
                     f.write(response.data)
                 print(f"已下载: {file_name}")
             else:
@@ -60,3 +62,13 @@ def download_images(url, images,save_path):
             print(f"下载图片时出错: {e}")
 
 download_images(url, images,save_path)
+
+try:
+    os.remove(tmp_html_path)
+    print(f"文件 '{tmp_html_path}' 已删除。")
+except FileNotFoundError:
+    print(f"文件 '{tmp_html_path}' 不存在，无法删除。")
+except PermissionError:
+    print(f"没有权限删除文件 '{tmp_html_path}'。")
+except Exception as e:
+    print(f"删除文件时出错: {e}")
