@@ -1,3 +1,5 @@
+<!-- 
+我觉得可以直接把目录省略，把跳转链接放下面表格里。先注释掉，如果需要再放出来
 - [脚本合集](#脚本合集)
   - [1 概述（文件结构）](#1-概述文件结构)
   - [2 脚本使用说明](#2-脚本使用说明)
@@ -10,8 +12,7 @@
     - [2.7 zbtbl\geojson_to_sql.py](#27-geojson_to_sqlpy)
     - [2.8 zbtbl\mysql_edit.py](#28-mysql_editpy)
     - [2.9 zbtbl\tb_crawler.py](#29-tb_crawlerpy)
-    - [2.10 zbtbl\calligraphy](#210-calligraphy)
-
+    - [2.10 zbtbl\calligraphy](#210-calligraphy) -->
 
 # 脚本合集
 
@@ -23,16 +24,16 @@
 
 | 脚本               | 功能                                                         | 脚本链接                                                     |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| split_train_val.py | 划分数据集                                                   | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/split_train_val.py) |
-| write_img_path.py  | 按要求把文件路径保存到指定文件（yolo用）                     | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/write_img_path.py) |
-| json_to_yolo.py    | 对标注文件进行json到yolo的格式转换（yolo用）                 | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/json_to_yolo.py) |
-| split_files.py     | 把一个文件夹内的同类型文件等分到n个子文件夹中（常用于分配任务） | [链接](https://github.com/bhsh0112/Script/blob/main/split-files.py) |
-| URL2mp4.py         | 下载链接中的视频（当前支持youtube和bilibili）                | [链接](https://github.com/bhsh0112/Script/blob/main/URL2mp4.py) |
-| Images_download.py | 批量下载链接中的图片                                         | [链接](https://github.com/bhsh0112/Script/blob/main/images_download.py) |
-| geojson_to_sql.py  | 把geojson文件转为mysql写入语句                              | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/geojson_to_sql.py) |
-| mysql_edit.py      | 远程连接mysql数据库并批量编辑                                | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/mysql_edit.py) |
-| tb_crawler.py      | 模拟浏览操作爬取淘宝商品列表                                 | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/tb_crawler.py) |
-| calligraphy        | 一些视觉相关的识别、变换、裁切、提取                          | [链接](https://github.com/bhsh0112/Script/tree/zbtbl/zbtbl/calligraphy) |
+| [split_train_val.py](#21-split_train_valpy) | 划分数据集                                                   | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/split_train_val.py) |
+| [write_img_path.py](#22-write_img_pathpy)  | 按要求把文件路径保存到指定文件（yolo用）                     | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/write_img_path.py) |
+| [json_to_yolo.py](#23-json_to_yolopy)    | 对标注文件进行json到yolo的格式转换（yolo用）                 | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/json_to_yolo.py) |
+| [split_files.py](#24-split_filespy)     | 把一个文件夹内的同类型文件等分到n个子文件夹中（常用于分配任务） | [链接](https://github.com/bhsh0112/Script/blob/main/split-files.py) |
+| [URL2mp4.py](#25-url2mp4py)         | 下载链接中的视频（当前支持youtube和bilibili）                | [链接](https://github.com/bhsh0112/Script/blob/main/URL2mp4.py) |
+| [Images_download.py](#26-images_downloadpy) | 批量下载链接中的图片                                         | [链接](https://github.com/bhsh0112/Script/blob/main/images_download.py) |
+| [geojson_to_sql.py](#27-geojson_to_sqlpy)  | 把geojson文件转为mysql写入语句                              | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/geojson_to_sql.py) |
+| [mysql_edit.py](#28-mysql_editpy)      | 远程连接mysql数据库并批量编辑                                | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/mysql_edit.py) |
+| [tb_crawler.py](#29-tb_crawlerpy)      | 模拟浏览操作爬取淘宝商品列表                                 | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/tb_crawler.py) |
+| [calligraphy](#210-calligraphy)        | 一些视觉相关的识别、变换、裁切、提取                          | [链接](https://github.com/bhsh0112/Script/tree/zbtbl/zbtbl/calligraphy) |
 
 ## 2 脚本使用说明
 
@@ -177,4 +178,4 @@ python images_download.py
 pip install -r requirements.txt
 ```
 
-当时捣鼓opencv的实验品，跑通之后就转到java了，这个就没再管了。当时是在Ubuntu上跑的。只支持我的6个字一页的字帖，位置也不能变。
+当时捣鼓opencv的实验品，跑通之后就转到java了，这个就没再管了。当时是在Ubuntu上跑的。只支持我的6个字一页的字帖，位置也不能变
