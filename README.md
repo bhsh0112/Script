@@ -29,10 +29,10 @@
 | split_files.py     | 把一个文件夹内的同类型文件等分到n个子文件夹中（常用于分配任务） | [链接](https://github.com/bhsh0112/Script/blob/main/split-files.py) |
 | URL2mp4.py         | 下载链接中的视频（当前支持youtube和bilibili）                | [链接](https://github.com/bhsh0112/Script/blob/main/URL2mp4.py) |
 | Images_download.py | 批量下载链接中的图片                                         | [链接](https://github.com/bhsh0112/Script/blob/main/images_download.py) |
-| geojson_to_sql.py  | 把geojson文件转为mysql写入语句                               |  |
-| mysql_edit.py      | 远程连接mysql数据库并批量编辑                                 |  |
-| tb_crawler.py      | 模拟浏览操作爬取淘宝商品列表                                  |  |
-| calligraphy        | 一些视觉相关的识别、变换、裁切、提取                           |  |
+| geojson_to_sql.py  | 把geojson文件转为mysql写入语句                              | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/geojson_to_sql.py) |
+| mysql_edit.py      | 远程连接mysql数据库并批量编辑                                | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/mysql_edit.py) |
+| tb_crawler.py      | 模拟浏览操作爬取淘宝商品列表                                 | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/tb_crawler.py) |
+| calligraphy        | 一些视觉相关的识别、变换、裁切、提取                          | [链接](https://github.com/bhsh0112/Script/tree/zbtbl/zbtbl/calligraphy) |
 
 ## 2 脚本使用说明
 
