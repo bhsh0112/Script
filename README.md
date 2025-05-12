@@ -18,7 +18,7 @@
 | [mysql_edit.py](#28-mysql_editpy)      | 远程连接mysql数据库并批量编辑                                | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/mysql_edit.py) |
 | [tb_crawler.py](#29-tb_crawlerpy)      | 模拟浏览操作爬取淘宝商品列表                                 | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/tb_crawler.py) |
 | [calligraphy](#210-calligraphy)        | 一些视觉相关的识别、变换、裁切、提取                          | [链接](https://github.com/bhsh0112/Script/tree/zbtbl/zbtbl/calligraphy) |
-| [mp42gif.py](#211-mp42gifpy) | MP4转gif | 链接 |
+| [mp42gif.py](#211-mp42gifpy) | MP4转gif | [链接](https://github.com/bhsh0112/Script/blob/sh/mp42gif.py) |
 
 ## 2 脚本使用说明
 
@@ -178,12 +178,12 @@ pip install moviepy
 **代码运行：**
 
 ```
-python mp42gif.py --input /path/to/mp4 --output /path/to/gif --start start_time --end end_time --fps fps
+python mp42gif.py --start start_time --end end_time --fps fps
 ```
 
 例：
 
 ```
-python3 mp42gif.py --input test/485_1744303062\(原视频\).mp4 --output test/test2.gif --start 2.1 --end 7 --fps 10
+python3 mp42gif.py --start 2.1 --end 7 --fps 10
 ```
 
