@@ -2,7 +2,7 @@ import urllib3
 import os
 from urllib.parse import urljoin, urlparse
 
-# 第一个函数，用来下载网页，返回网页内容
+# 用来下载网页，返回网页内容
 def download_content(url):
     http = urllib3.PoolManager()
     response = http.request("GET", url)
