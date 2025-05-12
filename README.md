@@ -1,19 +1,3 @@
-<!-- 
-我觉得可以直接把目录省略，把跳转链接放下面表格里。先注释掉，如果需要再放出来
-- [脚本合集](#脚本合集)
-  - [1 概述（文件结构）](#1-概述文件结构)
-  - [2 脚本使用说明](#2-脚本使用说明)
-    - [2.1 split\_train\_val.py](#21-split_train_valpy)
-    - [2.2 write\_img\_path.py](#22-write_img_pathpy)
-    - [2.3 json\_to\_yolo.py](#23-json_to_yolopy)
-    - [2.4 split\_files.py](#24-split_filespy)
-    - [2.5 URL2mp4.py](#25-url2mp4py)
-    - [2.6 images\_download.py](#26-images_downloadpy)
-    - [2.7 zbtbl\geojson_to_sql.py](#27-geojson_to_sqlpy)
-    - [2.8 zbtbl\mysql_edit.py](#28-mysql_editpy)
-    - [2.9 zbtbl\tb_crawler.py](#29-tb_crawlerpy)
-    - [2.10 zbtbl\calligraphy](#210-calligraphy) -->
-
 # 脚本合集
 
 本仓库以个人应用为导向，总结学习与开发过程中应用到的脚本
@@ -34,6 +18,7 @@
 | [mysql_edit.py](#28-mysql_editpy)      | 远程连接mysql数据库并批量编辑                                | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/mysql_edit.py) |
 | [tb_crawler.py](#29-tb_crawlerpy)      | 模拟浏览操作爬取淘宝商品列表                                 | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/tb_crawler.py) |
 | [calligraphy](#210-calligraphy)        | 一些视觉相关的识别、变换、裁切、提取                          | [链接](https://github.com/bhsh0112/Script/tree/zbtbl/zbtbl/calligraphy) |
+| [mp42gif.py](#211-mp42gifpy) | MP4转gif | [链接](https://github.com/bhsh0112/Script/blob/sh/mp42gif.py) |
 
 ## 2 脚本使用说明
 
@@ -179,3 +164,30 @@ pip install -r requirements.txt
 ```
 
 当时捣鼓opencv的实验品，跑通之后就转到java了，这个就没再管了。当时是在Ubuntu上跑的。只支持我的6个字一页的字帖，位置也不能变
+
+### 2.11 mp42gif.py
+
+**作用：**将输入的mp4转为gif，可以用于ppt制作，表情包制作等，支持设置输入路径、输出路径、起止时间和帧率
+
+**前期准备：**
+
+```
+pip install moviepy
+```
+
+**代码运行：**
+
+```
+python mp42gif.py --start start_time --end end_time --fps fps
+```
+
+例：
+
+默认转换整个视频，帧率为10
+```
+python mp42gif.py 
+```
+完整设置参数的运行指令如下：
+```
+python mp42gif.py --start 2.1 --end 7 --fps 10
+```
