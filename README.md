@@ -185,6 +185,7 @@ python mp42gif.py --start start_time --end end_time --fps fps
 
 ```
 python mp42gif.py #默认转换整个视频，帧率为10
+```
+```
 python mp42gif.py --start 2.1 --end 7 --fps 10
 ```
-
