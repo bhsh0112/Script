@@ -6,7 +6,7 @@
 
 这里只提供一个功能概述，具体使用方法见下文
 
-| 脚本               | 功能                                                         | 脚本链接                                                     |
+| 脚本（跳转说明）       | 功能                                                         | 脚本链接                                                     |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [split_train_val.py](#21-split_train_valpy) | 划分数据集                                                   | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/split_train_val.py) |
 | [write_img_path.py](#22-write_img_pathpy)  | 按要求把文件路径保存到指定文件（yolo用）                     | [链接](https://github.com/bhsh0112/Script/blob/main/yolo/write_img_path.py) |
@@ -19,6 +19,7 @@
 | [tb_crawler.py](#29-tb_crawlerpy)      | 模拟浏览操作爬取淘宝商品列表                                 | [链接](https://github.com/bhsh0112/Script/blob/zbtbl/zbtbl/tb_crawler.py) |
 | [calligraphy](#210-calligraphy)        | 一些视觉相关的识别、变换、裁切、提取                          | [链接](https://github.com/bhsh0112/Script/tree/zbtbl/zbtbl/calligraphy) |
 | [mp42gif.py](#211-mp42gifpy) | MP4转gif | [链接](https://github.com/bhsh0112/Script/blob/sh/mp42gif.py) |
+| [label_vis.py](#21-split_train_valpy) | yolo标注文件可视化 | 链接 |
 
 ## 2 脚本使用说明
 
@@ -190,4 +191,28 @@ python mp42gif.py
 完整设置参数的运行指令如下：
 ```
 python mp42gif.py --start 2.1 --end 7 --fps 10
+```
+
+### 2.12 label_vis.py
+
+**作用：**可视化yolo格式的标注文件，标出标注框
+
+**前期准备：**
+
+```
+pip install opencv-python numpy glob argparse
+```
+
+**代码运行：**
+
+```
+python label_vis.py --anbatations path/to/labels --images path/to/images --output path/to/output --suffix "(后缀)" --class_names "class1 class2(空格分隔)"
+```
+
+例：
+
+默认输出到当前目录下的`label_output`文件夹中，后缀是"_annotated"
+
+```
+python label_vis.py --annotations ./data/dataset/labels --iamges ./data/dataset/images --class_names "car truck people"
 ```
