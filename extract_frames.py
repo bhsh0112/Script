@@ -72,7 +72,7 @@ if __name__ == "__main__":
         description="视频抽帧工具 - 按秒数指定范围",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    parser.add_argument("--video_path", default="~/Downloads/超三联赛-广告数据提取/广告2/场边产品露出/",help="输入MP4视频路径")
+    parser.add_argument("--video_path", default="D:\\麒纪\\yolo广告检测\\超三联赛-广告数据提取\\广告2\\广告2.mp4",help="输入MP4视频路径")
     parser.add_argument("--start_sec", type=float, help="起始时间(秒)")
     parser.add_argument("--end_sec", type=float, help="结束时间(秒)")
     parser.add_argument("--n_fps", type=int, help="每秒抽取帧数")
